@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFunction(){
+          const text=  document.getElementById("demo");
+          if(!text.checkValidity()||text<1){
+            document.getElementById("sample").innerHTML="Invalid";
+          }else{
+            document.getElementById("sample").innerHTML="valid";
+          }
+        }
+    </script>
+</head>
+<body>
+    <h2> Java Validation</h2>
+    <input id="demo" type="number" required>
+    <button type="button" onclick="myFunction()">Submit</button>
+    <p id="sample"> </p>
+</body>
+</html>
